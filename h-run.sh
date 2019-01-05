@@ -5,9 +5,9 @@ cd `dirname $0`
 install_miner() {
 	mkdir beam_opencl
 	cd beam_opencl
-	wget https://builds.beam.mw/mainnet/2019.01.03/Release/linux/opencl-miner-1.0.52.tar.gz
-        tar -zxf opencl-miner-1.0.52.tar.gz
-	rm opencl-miner-1.0.52.tar.gz
+	wget https://github.com/OctavioMaia/BeamMW_HiveOS/releases/download/v1.1/beam_opencl.tar.gz
+        tar -zxf beam_opencl.tar.gz
+	rm beam_opencl.tar.gz
 } 
 
 
