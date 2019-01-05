@@ -10,7 +10,7 @@ get_cards_hashes(){
 	hs=''
 	for (( i=0; i < ${GPU_COUNT_AMD}; i++ )); do
 		hs[$i]=''
-		local MHS=`cat $LOG_NAME | grep -a "GPU:$(echo $i)" | tail -n1`
+		local MHS=`cat $LOG_NAME | grep -a "Performance: " | tail -n1`
 		hs[$i]=`echo $MHS | cut -d " " -f9 | cut -d "/" -f1`
 	done
 }
